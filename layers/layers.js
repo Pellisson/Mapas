@@ -24,7 +24,7 @@ var lyr_GrupoDenardin_1 = new ol.layer.Vector({
                 source:jsonSource_GrupoDenardin_1, 
                 style: style_GrupoDenardin_1,
                 popuplayertitle: "GrupoDenardin",
-                interactive: true,
+                interactive: false,
     title: 'GrupoDenardin<br />\
     <img src="styles/legend/GrupoDenardin_1_0.png" /> Amizade<br />\
     <img src="styles/legend/GrupoDenardin_1_1.png" /> Capao Redondo<br />\
@@ -59,14 +59,14 @@ var lyr_Ca60_talhoes_2 = new ol.layer.Vector({
     <img src="styles/legend/Ca60_talhoes_2_4.png" /> 3,150 - 6,900<br />'
         });
 
-lyr_GoogleSatelliteHybrid_0.setVisible(true);lyr_GrupoDenardin_1.setVisible(true);lyr_Ca60_talhoes_2.setVisible(true);
+lyr_GoogleSatelliteHybrid_0.setVisible(false);lyr_GrupoDenardin_1.setVisible(false);lyr_Ca60_talhoes_2.setVisible(true);
 var layersList = [lyr_GoogleSatelliteHybrid_0,lyr_GrupoDenardin_1,lyr_Ca60_talhoes_2];
 lyr_GrupoDenardin_1.set('fieldAliases', {'OBJECTID': 'OBJECTID', 'Name': 'Name', 'Fazenda': 'Fazenda', 'Talhao': 'Talhao', 'ha': 'ha', 'Produtor': 'Produtor', 'Cultura': 'Cultura', 'Safra2324': 'Safra2324', 'Hectares': 'Hectares', 'Shape_Leng': 'Shape_Leng', 'Shape_Area': 'Shape_Area', });
 lyr_Ca60_talhoes_2.set('fieldAliases', {'Name': 'Name', 'Calc': 'Calc', });
 lyr_GrupoDenardin_1.set('fieldImages', {'OBJECTID': 'TextEdit', 'Name': 'TextEdit', 'Fazenda': 'TextEdit', 'Talhao': 'TextEdit', 'ha': 'TextEdit', 'Produtor': 'TextEdit', 'Cultura': 'TextEdit', 'Safra2324': 'TextEdit', 'Hectares': 'TextEdit', 'Shape_Leng': 'TextEdit', 'Shape_Area': 'TextEdit', });
 lyr_Ca60_talhoes_2.set('fieldImages', {'Name': 'TextEdit', 'Calc': 'TextEdit', });
 lyr_GrupoDenardin_1.set('fieldLabels', {'OBJECTID': 'inline label - always visible', 'Name': 'no label', 'Fazenda': 'inline label - always visible', 'Talhao': 'inline label - always visible', 'ha': 'no label', 'Produtor': 'no label', 'Cultura': 'no label', 'Safra2324': 'no label', 'Hectares': 'inline label - always visible', 'Shape_Leng': 'no label', 'Shape_Area': 'no label', });
-lyr_Ca60_talhoes_2.set('fieldLabels', {'Name': 'no label', 'Calc': 'no label', });
+lyr_Ca60_talhoes_2.set('fieldLabels', {'Name': 'inline label - always visible', 'Calc': 'inline label - always visible', });
 lyr_Ca60_talhoes_2.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
